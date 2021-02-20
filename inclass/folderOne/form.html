@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML input variation and form</title>
+
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--creating form-->
+    <!--method= send form as POST or GET request-->
+    <form action="#" method="GET">
+        <!--INPUT TYPE TEXT-->
+        <div>
+            <label for="name">Name:</label>
+            <input
+            placeholder="hey write your name"
+            name="username"
+            type="text"
+            id="name"
+            required/>
+        </div>
+
+        <!--input type number-->
+        <div>
+
+            <label>Phone:</label>
+            <input type="number"/>
+            <input type="text" name="hiddenToken" hidden value="" hidden />
+
+        </div>
+
+        <!--input type password-->
+        <div>
+        <label>password</label>
+        <input type="password" />
+
+        </div>
+        <!--input type url-->
+        <div>
+            <label>facebook:</label>
+            <input type="url"/>
+        </div>
+
+        <!--input ytpe date-->
+        <div>
+            <label>DOB:</label>
+            <input type="date"/>
+        </div>
+        
+        <!--input type textarea-->
+        <div>
+            <label>Detail message:</label>
+            <textarea rows="5" cols="30"></textarea>
+        </div>
+
+        <!--input ytpe radio-->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="grnder" /> <label>male</label>
+            <input type="radio" name="gender" /> <label>female</label>
+        </div>
+
+        <!--input type file-->
+        <div>
+            <label>attachment:</label>
+            <input type="file" accept="image/*" />
+        </div>
+
+        <!--input type email-->
+        <div>
+            <label>email:</label>
+            <input type="email">
+        </div>
+
+        <!--input type checkbox-->
+        <div>
+            <input type="checkbox" />
+            <label>accept the terms and conditions</label>
+        </div>
+
+        <!--input type checkbox-->
+        <div>
+            <label>budge:</label>
+            <input type="range"nmin="1" max="100" value="50" />
+        </div>
+
+        <!--input type select-->
+        <div>
+            <label>favourite subject:</label>
+            <select name="" id="" multiple>
+                <option value="">--select--</option>
+                <option value="maths">maths</option>
+                <option value="science">science</option>
+                <option value="history">history</option>
+            </select>
+        </div>
+
+        <!--input type select with optgroup-->
+        <div>
+            <label>choose a Dish:</label>
+            <select name="" id="">
+                <optgroup label="italian">
+                <option>pizza</option>
+                <option>spaghetti</option>
+            </optgroup>
+            <optgroup label="mexican">
+                <option>chicken</option>
+                <option>salsa</option>
+            </optgroup>
+        </select>
+        </div>
+
+        <!--input type select with datalist-->
+        <div>
+            <label for="car">choose a car:</label>
+            <input type="text" name="" id="car" list="cars" />
+        
+        </div>
+
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+</html>
